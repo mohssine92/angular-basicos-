@@ -1,10 +1,24 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core';  /* => tenemos importacion del decorador Componente viene de angular\core - el decorador component tiene varias propiedades internas  */
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+/* este decorador cuando esta vacio requiere un argumento , sabemos que un argumento es un objeto  */
+@Component({ /* nosotros vamos a especificar dos argumentos  */
+
+ selector: 'app-root',     /* le asignamos el nombre que va tener este componente  */
+templateUrl: 'app.component.html',    /* donde especificamos el path donde se encuentra el archivo de html que va ser utulizado para este componente  */
+ /*  template: `
+     <h1>Hola de nuevo</h1>
+     <p>se puede trabajar html desde este arguente , pero nosotros vamos a atrabajar apuntando a a url de html </p>
+
+
+
+
+   `, */ /* lo que que  esta colocado aqui en etiquetas html sale en vista , y se ignora app.component.html en este componente  */
+
 })
 export class AppComponent {
-  title = 'bases';
+   title: string = 'Contador App ';
 }
+
+
+/* => es una simple clase que tiene un decador  */
+/* => ese decordaor es importado de angular/core */

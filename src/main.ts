@@ -10,3 +10,6 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+
+  /* => este archivo no se toca , este archivo ayuda a decirle a angular el ambiente en el  que esta curriendo .   */

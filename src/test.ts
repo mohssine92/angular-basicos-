@@ -23,3 +23,5 @@ getTestBed().initTestEnvironment(
 const context = require.context('./', true, /\.spec\.ts$/);
 // And load the modules.
 context.keys().map(context);
+
+/* => configaracion de nuestro  ambiente de pruebas tampoco tocamos en este curso ,   */

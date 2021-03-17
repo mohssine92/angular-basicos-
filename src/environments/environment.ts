@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false  /* => esta es de  desarollo  */
 };
 
 /*
@@ -14,3 +14,5 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+/* angular de manera automatica nos permite tener un lugar para nuestras variables de entorno ya sea de desarollo o de production   */
