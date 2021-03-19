@@ -1,22 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser'; /* relacionado de algo => estamos trabajando en navigador web  */
 
-import { AppComponent } from './app.component';  /* ==> el appComponent podia mentalizarme que es mi aplication en general => es un componente , estamos usando lo que se reconece desestructuracion de objetos  */
-import { ContadorComponent } from './contador.component';
+import { AppComponent } from './app.component';  /* ==> el appComponent podia mentalizarme que es mi aplication en general => es un componente principal , estamos usando lo que se reconece desestructuracion de objetos  */
+import { ContadorComponent } from './contador/contador.component';
+import { HeroeComponent } from './heroes/heroe/heroe.component';
 
-@NgModule({
-  declarations: [  /* - esta parte de los modulos podemos verle como un agrupador   */
+
+
+
+@NgModule({ /* NgModul simplemente es el decorador que transforma simple clases a claseModul */  /* este decorador recibe informacion ,  */
+  declarations: [  /* - esta parte de los modulos podemos verle como un agrupador , declaration es usalmente donde vamos a colocar componentes que vamos creando   */
     AppComponent,   /* => despues de importar esta class-de-este-componente , la colocamos aqui , porque ? . aqui declaramos los componentes que estamos utulizando en este modulo , asi entendemos si no declaramos un componente en este modulo no va a
                          a funccionar al momento de compilar . */
-    ContadorComponent
+    ContadorComponent,
+    HeroeComponent
+
+
   ],
-  imports: [
-    BrowserModule
+  imports: [  /* esta parte donde vamos a colocar otros modulos  */ /* recuerda que los componentes y modulos son simplementes clases , solo el decorador quien identificas si la clase sera componente o modulo  */
+     BrowserModule,
+
+
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [], /* los providers son como servicios especificos a un modulo , bueno aqui van las clases providers  */
+  bootstrap: [AppComponent] /* appComponent es componente principal es el componente que quiero lanzar primero  */
 })
-export class AppModule { }
+export class AppModule { } /* recuerda casi todo en angular son clases , asique @NgModule es un decorador que transforma esta simple clase a una claseModul   */
 
 /* es una clase normal como cualquier clase pero tiene un decorador especial */
 

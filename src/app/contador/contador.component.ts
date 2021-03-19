@@ -4,10 +4,9 @@ import { Component } from "@angular/core";  /*  @angular/core => es un paquete ,
 
 
 
-
 @Component({
   selector: 'app-contador',
-  styleUrls: ['app.component.css'],
+  /* styleUrls: ['../app.component.css'], */
   template: `
 
      <h2>{{ title }}</h2>
