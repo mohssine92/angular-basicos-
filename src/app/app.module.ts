@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser'; /* relacionado de algo => estamos trabajando en navigador web  */
 
-import { AppComponent } from './app.component';  /* ==> el appComponent podia mentalizarme que es mi aplication en general  */
+import { AppComponent } from './app.component';  /* ==> el appComponent podia mentalizarme que es mi aplication en general => es un componente , estamos usando lo que se reconece desestructuracion de objetos  */
+import { ContadorComponent } from './contador.component';
 
-@NgModule({  /* => aqui estaria los modulos que componen la misma  */
-  declarations: [
-    AppComponent    /* modulos de productos - modulos de clientes - modulos de autenticacion - esta parte de los modulos podemos verle como un agrupador  */
+@NgModule({
+  declarations: [  /* - esta parte de los modulos podemos verle como un agrupador   */
+    AppComponent,   /* => despues de importar esta class-de-este-componente , la colocamos aqui , porque ? . aqui declaramos los componentes que estamos utulizando en este modulo , asi entendemos si no declaramos un componente en este modulo no va a
+                         a funccionar al momento de compilar . */
+    ContadorComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,19 @@
+<h2>{{ title }}</h2>  <!-- estos de dos llaves , no permite imprimir los valores de las propiedades de class component . y tambien nos permite escribir cualquier expresion de js  -->
+
+
+<!-- <button (click)=" numero = numero+1 "> +1</button> -->   <!-- los eventos estan definidos entre parentesis  como es el caso de click es un evento  -->
+                                                               <!-- numero es la variables mejor diche la propiedad de clase appComponent  -->
+
+
+<!-- <button (click)="sumar()"> +1</button>  --> <!-- cada vez toca click mando a llamar la funccion sumar  -->
+<!-- <button (click)="acumular(1)"> +1</button> -->
+<button (click)="acumular(base)"> +{{ base }}</button>
+
+<!--<span> {{ numero }} </span> -->  <!-- recuerda que numero es una prpiedad de la clase de appComponent -->
+
+<h3>La base es : <strong>{{ numero }}</strong></h3>
+
+<!-- <button (click)="numero = numero -1" > - 1</button> -->
+<!-- <button (click)="restar()" > - 1</button> -->
+<!-- <button (click)="acumular(-1)" > - 1</button>  -->    <!-- opcion3 - la idea es tener codigo mas limpio  -->
+<button (click)="acumular(-base)" > -{{ base }}</button>

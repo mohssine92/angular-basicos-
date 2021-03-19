@@ -17,25 +17,7 @@ import { Component } from '@angular/core';  /* => tenemos importacion del decora
 
 })
 export class AppComponent {
-   title : string = 'Contador App ';
-   numero: number = 10;
-   base  : number = 5;
 
-  /*  sumar () {                 opcion 2
-      this.numero += 1;
-
-   }
-
-   restar(){
-      this.numero -= 1;
-
-   } */
-
-   /* opcion tres => vamos a recibir un argumento este argumente sea el que sume o reste   */
-   acumular(valor: number){
-     this.numero += valor
-
-   }
 
 
 
