@@ -4,7 +4,8 @@ import { Component } from '@angular/core';  /* => tenemos importacion del decora
 @Component({ /* nosotros vamos a especificar dos argumentos  */
 
  selector: 'app-root',     /* le asignamos el nombre que va tener este componente  */
-templateUrl: 'app.component.html',    /* donde especificamos el path donde se encuentra el archivo de html que va ser utulizado para este componente  */
+ templateUrl: 'app.component.html',    /* donde especificamos el path donde se encuentra el archivo de html que va ser utulizado para este componente  */
+ styleUrls: ['app.component.css']
  /*  template: `
      <h1>Hola de nuevo</h1>
      <p>se puede trabajar html desde este arguente , pero nosotros vamos a atrabajar apuntando a a url de html </p>
@@ -16,9 +17,32 @@ templateUrl: 'app.component.html',    /* donde especificamos el path donde se en
 
 })
 export class AppComponent {
-   title: string = 'Contador App ';
+   title : string = 'Contador App ';
+   numero: number = 10;
+   base  : number = 5;
+
+  /*  sumar () {                 opcion 2
+      this.numero += 1;
+
+   }
+
+   restar(){
+      this.numero -= 1;
+
+   } */
+
+   /* opcion tres => vamos a recibir un argumento este argumente sea el que sume o reste   */
+   acumular(valor: number){
+     this.numero += valor
+
+   }
+
+
+
 }
 
 
 /* => es una simple clase que tiene un decador  */
 /* => ese decordaor es importado de angular/core */
+
+/* recuerda que esta clase de este archivo esta instanciada en el archivo app.component.html  */
