@@ -1,25 +1,27 @@
 /* Conmado de angular cli para  generar componente  => ng g c heroes/listado  */
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-listado',
   templateUrl: './listado.component.html',
   styleUrls: ['./listado.component.css']
 })
-export class ListadoComponent implements OnInit {
+export class ListadoComponent  {
 
-   google: string[] = ['casa','rabat','benni mellal'];
+  heroes: string[] = ['Spiderman','Ironman','Hulk','Thor','Capitan america'];
+  heroeBorrado: string = '';
 
-  constructor() {
-      console.log("constructor");
+
+  borrarHeroe(){
+
+     console.log('shift borra y returna el borardo que interesante ');
+     this.heroeBorrado = this.heroes.shift() || '';
+
+
 
   }
 
-  ngOnInit(): void {
 
-    console.log(this.google);
-
-  } /* usualmente se usa para inicial cosa , por ejemplo hacer peticion a algun Servicio y se trae la informacion pues aqui se hace esta parte , asi el componente se inicia con la iformacion  */
 
 
 }
