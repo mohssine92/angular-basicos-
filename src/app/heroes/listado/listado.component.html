@@ -1,11 +1,12 @@
-<p>Listado de Heroes => <span>Directiva ngFor : hace lo que hace foreach en php  </span> </p>
+<p>Listado de Heroes</p>
 
 
-<div *ngIf=" heroeBorrado !=='' ">
+<div *ngIf="heroeBorrado; else noBorrado"> <!-- Refefencia local es algo del template , no del componente class  -->
   <h3>Heroe borrado <small>{{ heroeBorrado }}</small> </h3>
-
 </div>
-
+<ng-template #noBorrado>
+   <h3>No Ha borrado nada </h3>
+</ng-template>
 <br>
 
 <button (click)="borrarHeroe()">
