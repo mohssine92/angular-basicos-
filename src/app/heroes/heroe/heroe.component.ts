@@ -7,7 +7,6 @@ import { Component } from "@angular/core";
    selector: 'app-heroe',
    templateUrl: 'heroe.component.html',
 
-
 })
 export class HeroeComponent{
    nombre: string = 'Iroman';
@@ -18,16 +17,21 @@ export class HeroeComponent{
 
    }
 
-   /* crear un get es basicamente crearme una propiedad cuando yo la llame va ser procesada igual , pero se va ver como una propiedad igual que nombre y edad  */
-   get nombreCapitalizado(): string{
+   /* crear un get es basicamente crearme una propiedad cuando yo la llame va ser procesada, pero se va ver como una propiedad igual que nombre y edad  - Noten no es un metodo es un getter segnifica en tamplate sera llamada como propiedad no como metodo */
+   get nombreCapitalizado() {
       return this.nombre.toUpperCase();
    }
 
-
+   cambiarNombre():void{
+      this.nombre = 'Spiderman';
+   }
+   cambiarEdad():void{
+    this.edad = 35;
+  }
 
 
 
 }
 
 
-/*  este componente tenemos que importarlo en un modulo paraque funccione - actualmente el unico modulo que tenemos app.Modul , pues lo importamos alli  */
+

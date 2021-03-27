@@ -18,7 +18,7 @@ import { Component } from "@angular/core";  /*  @angular/core => es un paquete ,
 
      <button (click)="acumular(-base)" > -{{ base }}</button>
 
-  `  /* todo html de este ContadorComponent va ser aqui , en este caso evitamos crear archivo template html para esta componente  */
+  `
 })
 export class ContadorComponent {
    title : string = 'Contador App ';

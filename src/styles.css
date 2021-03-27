@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-/* ==> archivo de estilos Global , lo que se va aplicar de forma genral en la aplicacion , adiferencia app.component.css . solo se aplicaria a app.component.html  */
+/* ==> archivo de estilos Global , esta en  la configuracion de angular.json , cuando la aplicacion se compile lo tomra y lo injecta en html   */
 * {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 200;

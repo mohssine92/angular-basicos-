@@ -1,4 +1,4 @@
-<!doctype html>   <!-- ==> esta es la pagina que estamos viendo a nivel macro ,  -->
+<!doctype html>   <!--index que se carga por defecto , la url se apunta a src -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -8,7 +8,12 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root> <!-- esta es la forma de llamar al componente  -->
+  <!-- SI EL COMPONENETE NO TIENE MODULO NO SE VA PODER RENDERIZARLO DESDE EL INDEX COMO COMPONENTE PRINCIPAL, TIENE EL COMOPONENTE ESTAR DENTRO DE UN COMPONENTE ACOMPAÑADO CON MODULO COMO ES EL CASO DE APP.COMPONENT.TS CONSTA DE UN MODULO  -->
+
+  <app-root></app-root>  <!--renderizar este componente , este componenete principal de mi aplicacion -->
+
+
+
 </body>
 </html>
 <!-- en el inspector de elementos notamos que hay script que se injectan de manera magica para nosotros ahora es decir hay script no sabemos donde vienen  -->
