@@ -1,28 +1,12 @@
 <p>Listado de Heroes => <span>Directiva ngFor : hace lo que hace foreach en php  </span> </p>
-<!--
-<ul>
-  <li *ngFor="let heroe of heroes">
-       {{ heroe }}
-  </li>
-</ul>
- -->
-
-<!-- Opcio 2 , en caso necesito del index  -->
-
-<!-- <ul>
-  <li *ngFor="let heroe of heroes; let i = index ">
-      {{ i }} - {{ heroe }}
-  </li>
-</ul>
- -->
-
-<!-- opcio 3  --> <!-- exprecion de javascript  -->
 
 
-<div>
-  <h3>Heroe borrado</h3>
-  <span>{{ heroeBorrado }}</span>
+<div *ngIf=" heroeBorrado !=='' ">
+  <h3>Heroe borrado <small>{{ heroeBorrado }}</small> </h3>
+
 </div>
+
+<br>
 
 <button (click)="borrarHeroe()">
 Borrar
