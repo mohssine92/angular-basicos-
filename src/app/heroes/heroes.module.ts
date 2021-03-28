@@ -14,7 +14,8 @@ import { ListadoComponent } from './listado/listado.component';
 
   ],
   exports:[  /* exports segnifica que componente quiero sacar del llevo de kinderbueno que ? componente quiero poner publico para la aplicacion , sea vesible fuera de este module  */
-    ListadoComponent
+    ListadoComponent,
+    HeroeComponent
 
   ],
   imports:[  /* aqui dentro van modulos usualmente , los modulos son objetos que se colocan en los imports , ver en app.module.ts (module principal) , encontramos BrowserModule este no hay que volver a importarlo  */
